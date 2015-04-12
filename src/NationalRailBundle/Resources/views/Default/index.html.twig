@@ -1,0 +1,119 @@
+{% extends '::base.html.twig' %}
+
+
+{% block content %}
+
+
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">Method</span>
+
+                    <span class="required">*</span>
+
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="method" id="method" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription">Method</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">GetDepartureBoard, GetArrivalBoard, GetArrivalDepartureBoard</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">NumRows</span>
+
+                    <span class="required">*</span>
+
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="NumRows" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription" title="the minimum number of rows that are required for display of the required station board. For example, if the user interface only has space to display a list of 10 services, then numRows should always be set to 10">The web service client should only request...</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">10</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">crs</span>
+
+                    <span class="required">*</span>
+
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="crs" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription">station <a href="http://nationalrail.co.uk/passenger_services/info_on_the_move/station_codes/" target="_blank">code</a></span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">GTW</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">filterCrs</span>
+
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="filterCrs" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription" title="The filterCrs parameter identifies which station the returned station board is filtered by. If this parameter is not supplied then the returned board will be un-filtered">The filterCrs parameter identifies which...</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">VIC</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">filterType</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="filterType" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription" title='If the parameter is present then the filterType parameter determines if the board is filtered by services either "from" or "to" the filterCrs location. The default value of the filterType parameter is "to".'>If the parameter is present then the filterType...</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">"from" or "to"</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">timeOffset</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="timeOffset" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription" title='The timeOffset parameter containing the offset-times in minutes for defining the service (arrival/departure) staring times filter. If the parameter is not supplied then the offsetTime default value is 0'>The timeOffset parameter containing...</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">120</span>
+                </td>
+            </tr>
+
+            <tr class="argumentRow">
+                <td style="vertical-align: top;">
+                    <span class="parameterName">timeWindow</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <input name="timeWindow" value="" class="argument"/>
+                    <br/>
+                    <span class="parameterDescription" title='The timeWindow parameter containing value from 1 to 120 minutes which are the service time window filter. The parameter defautl value is 120 minutes (2 hours from starting time fileter). If the parameter is not suplied or the value is greater than 120 minutes then default value will be used'>The timeWindow parameter containing value...</span>
+                </td>
+                <td style="vertical-align: top;">
+                    <span class="sampleValue">120</span>
+                </td>
+            </tr>
+
+            <input type="hidden" id="action" value="GetTimesData"/>
+
+{% endblock %}
+

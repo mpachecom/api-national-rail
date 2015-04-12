@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="{{ asset('js/jquery-2.1.3.min.js') }}"></script>
+    <script src="{{ asset('js/utils.js') }}"></script>
+
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/styles.css')}}" />
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+
+<p>
+    <span class="title">National Rail API Explorer</span>
+</p>
+<table border="0">
+    <tr>
+        <td>
+            <span class="sectionTitle">GET Request</span>
+        </td>
+        <td class="middleCell"></td>
+        <td>
+            <span class="sectionTitle">Response</span>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">
+            <div id="formDiv">
+                <br/>
+                <form id="form">
+                    <table class="fieldsTable" border="0">
+                        <tr class="headerRow">
+                            <th>Name</th>
+                            <th width="240">Value</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><hr/></td>
+                        </tr>
+
+                        {% block content %}{% endblock %}
+
+                        <tr>
+                            <td colspan="3"><hr/></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <i>URL:</i> <a href='' id="displayUrl" class="url" target="_blank"></a>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <p>
+                        <input type="submit" value="GET" id="submitButton2"/>
+                    </p>
+                </form>
+            </div>
+
+            <br/>
+            <i>Available to explore:</i>
+            <ul>
+
+                <li>
+                    <span style="font-size: 9pt;">(GET)</span>
+
+
+                    <a href="/GetTimes/">GetTimes</a>
+
+                </li>
+
+                <li>
+                    <span style="font-size: 9pt;">(GET)</span>
+
+                    <a href="/GetServiceDetails/">GetServiceDetails</a>
+
+                </li>
+            </ul>
+            <p>
+                <span style="font-family: Courier ; font-style: italic ; font-size: 8pt">api-nationalrail 1.0.0</span>
+            </p>
+
+
+        </td>
+
+        <td class="middleCell">
+            &nbsp;
+        </td>
+
+        <td valign="top">
+            <div id="responseDiv">
+                <p>
+                <pre id="resultOutput"></pre>
+                </p>
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>

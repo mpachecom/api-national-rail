@@ -1,0 +1,27 @@
+{% extends '::base.html.twig' %}
+
+
+{% block content %}
+
+
+    <tr class="argumentRow">
+        <td style="vertical-align: top;">
+            <span class="parameterName">serviceID</span>
+
+            <span class="required">*</span>
+
+        </td>
+        <td style="vertical-align: top;">
+            <input name="serviceID" value="" class="argument"/>
+            <br/>
+            <span class="parameterDescription">serviceID</span>
+        </td>
+        <td style="vertical-align: top;">
+            <span class="sampleValue">dlIW6MRb20wR5b/n5nqctQ==</span>
+        </td>
+    </tr>
+
+    <input type="hidden" id="action" value="GetServiceDetailsData"/>
+
+{% endblock %}
+

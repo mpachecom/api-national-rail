@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+.title {
+    font-size: 18pt;
+    font-style: italic;
+}
+.sectionTitle {
+    font-size: 14pt;
+    #font-weight: bold;
+    text-decoration: underline;
+}
+.serviceName {
+    font-size: 18pt;
+    font-weight: bold;
+}
+.serviceDescription {
+    font-size: 14pt;
+    font-style: italic;
+    color:darkblue;
+}
+
+table {
+    border-collapse:collapse;
+}
+.fieldsTable {
+    border-collapse:separate;
+    border-spacing:10px 5px;
+}
+th {
+    text-align: left;
+    font-weight: bold;
+    font-size: 10pt;
+}
+.headerRow {
+    border-bottom: 2px solid #000;
+}
+.sampleValue {
+    font-style: italic;
+    font-size: 9pt;
+    color:darkgreen;
+}
+.parameterName {
+    font-family: monospace;
+    font-size: 12pt;
+    font-weight: bold;
+    color:darkblue;
+}
+.parameterDescription {
+    font-style: italic;
+    font-size: 8pt;
+    color: #555;
+}
+.argumentRow {
+    border-top: 1px solid #000;
+    max-height: 100%;
+}
+.parameterDescriptionRow {
+    max-height: 40%;
+    margin-bottom: 30px;
+}
+.required {
+    color: red;
+}
+.url {
+    font-family: monospace;
+    font-size: 8pt;
+}
+.middleCell {
+    border-left: dashed #AAA;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+<!-- for syntaxHighlight -->
+pre {padding: 5px; margin: 5px; }
+.string { color: green; }
+.number { color: blue; }
+.boolean { color: blue; }
+.null { color: red; }
+.key { color: black; }

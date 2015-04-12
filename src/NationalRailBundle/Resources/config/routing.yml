@@ -1,0 +1,32 @@
+national_rail_homepage:
+    path:     /
+    defaults: { _controller: NationalRailBundle:Default:getTimes }
+
+national_times_data:
+    path:  /GetTimesData/
+    defaults: { _controller: NationalRailBundle:Default:getTimesData }
+
+national_times:
+    path:  /GetTimes/
+    defaults: { _controller: NationalRailBundle:Default:getTimes }
+
+national_service_details_data:
+    path:  /GetServiceDetailsData/
+    defaults: { _controller: NationalRailBundle:Default:getServiceDetailsData }
+
+national_get_times:
+    path:  /GetTimes/{method}/{nRows}/{crs}/{fCrs}/{fType}/{tOffset}/{tWindow}
+    defaults: { _controller: NationalRailBundle:Default:getTimesGet,fCrs: null,fType: null,tOffset: null,tWindow: null  }
+    requirements:
+            _method: GET
+
+national_service_details:
+    path:  /GetServiceDetails/
+    defaults: { _controller: NationalRailBundle:Default:getServiceDetails }
+
+
+national_get_times_get:
+    path:  /GetServiceDetails/{serviceID}
+    defaults: { _controller: NationalRailBundle:Default:geServiceGet }
+    requirements:
+            _method: GET

@@ -1,0 +1,212 @@
+{
+    "GetStationBoardResult": {
+        "generatedAt": "2015-03-29T11:33:05.182529+01:00",
+        "locationName": "Gatwick Airport",
+        "crs": "GTW",
+        "platformAvailable": true,
+        "trainServices": {
+            "service": [
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Gatwick Airport",
+                            "crs": "GTW"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "std": "11:35",
+                    "etd": "On time",
+                    "operator": "Gatwick Express",
+                    "operatorCode": "GX",
+                    "serviceID": "+9fwyA+PjwrpPDq5SZb4RA=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Brighton",
+                            "crs": "BTN"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "std": "11:41",
+                    "etd": "On time",
+                    "platform": "2",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "UFuZSVHF/UFaPVbzjb5usQ=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Bedford",
+                            "crs": "BDM"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "Three Bridges",
+                            "crs": "TBD"
+                        }
+                    },
+                    "std": "11:42",
+                    "etd": "On time",
+                    "platform": "7",
+                    "operator": "Thameslink",
+                    "operatorCode": "TL",
+                    "serviceID": "4i+jlA6Ql697LDw/4VRmwA=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "Bognor Regis",
+                            "crs": "BOG",
+                            "via": "via Horsham "
+                        }
+                    },
+                    "std": "11:46",
+                    "etd": "On time",
+                    "platform": "3",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "pmu22z32tkY4mqjf+cTxnQ=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Three Bridges",
+                            "crs": "TBD"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "Bedford",
+                            "crs": "BDM"
+                        }
+                    },
+                    "std": "11:47",
+                    "etd": "On time",
+                    "platform": "4",
+                    "operator": "Thameslink",
+                    "operatorCode": "TL",
+                    "serviceID": "J7MOVZtKdOB8LcMe4MCHOg=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "Portsmouth Harbour",
+                            "crs": "PMH",
+                            "via": "via Horsham "
+                        }
+                    },
+                    "std": "11:49",
+                    "etd": "12:08",
+                    "platform": "5",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "uuOy+RTrKn1N69DsGPitfg=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Three Bridges",
+                            "crs": "TBD"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "std": "11:55",
+                    "etd": "On time",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "vCAvUDOUrEFsy4le9JVQOw=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "Three Bridges",
+                            "crs": "TBD"
+                        }
+                    },
+                    "std": "11:56",
+                    "etd": "On time",
+                    "platform": "3",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "tLzhO6jwSdwZm7CA5IIwOQ=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Bognor Regis",
+                            "crs": "BOG"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "std": "12:03",
+                    "etd": "12:06",
+                    "platform": "1",
+                    "operator": "Southern",
+                    "operatorCode": "SN",
+                    "serviceID": "EvkxLTx1zacEo4KetgV1VQ=="
+                },
+                {
+                    "origin": {
+                        "location": {
+                            "locationName": "Gatwick Airport",
+                            "crs": "GTW"
+                        }
+                    },
+                    "destination": {
+                        "location": {
+                            "locationName": "London Victoria",
+                            "crs": "VIC"
+                        }
+                    },
+                    "std": "12:05",
+                    "etd": "On time",
+                    "platform": "6",
+                    "operator": "Gatwick Express",
+                    "operatorCode": "GX",
+                    "serviceID": "1Y1r8TRHw6s0EZcoX1NC6w=="
+                }
+            ]
+        }
+    }
+}
