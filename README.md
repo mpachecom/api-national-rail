@@ -1,5 +1,4 @@
 api-national-rail
 =================
 
-A Symfony project created on March 24, 2015, 9:22 am.
-# api-national-rail
+This is basically an API build in symfony that uses http://www.nationalrail.co.uk/46391.aspx
