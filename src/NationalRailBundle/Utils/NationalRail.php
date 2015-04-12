@@ -56,7 +56,7 @@ class NationalRail
     {
 
         $this->soapClient = new \SoapClient("https://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx",array('trace' => TRUE,'compression' => SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP ));
-        $soapVar = new \SoapVar(array('ns2:TokenValue' => "2550bbc7-027e-49e5-bec0-4e07af47871a"),SOAP_ENC_OBJECT);
+        $soapVar = new \SoapVar(array('ns2:TokenValue' => "token"),SOAP_ENC_OBJECT);
         $soapHeader = new \SoapHeader('http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes','AccessToken',$soapVar,FALSE);
         $this->soapClient->__setSoapHeaders($soapHeader);
     }
